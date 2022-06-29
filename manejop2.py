@@ -1,0 +1,20 @@
+
+miarchivo=open('ejemplo2.csv','w')
+miarchivo.write('nombre'+',')
+miarchivo.write('apellido'+',')
+miarchivo.write('sexo'+',')
+miarchivo.write('edad'+',')
+miarchivo.write('pais'+'\n')
+
+cantidad=int(input('Digite el numero de registros: '))
+for i in range(cantidad):
+    nombre=input('Digite el nombre posicion:'+str(i)+',')
+    apellido=input('Digite el apellido posicion:'+str(i)+',')    
+    sexo=input('Digite el sexo posicion:'+str(i)+',')
+    edad=input('Digite el edad posicion:'+str(i)+',')
+    pais=input('Digite el pais posicion:'+str(i)+',')
+    miarchivo.write(nombre+',')
+    miarchivo.write(apellido+',')
+    miarchivo.write(sexo+',')
+    miarchivo.write(edad+',')
+    miarchivo.write(pais+'\n')
